@@ -41,6 +41,12 @@ body {
     background-color: transparent;
     /* margin: 0 15px; */
 }
+.navigation-bar-btn:hover {
+    background-color: #3e3e3e;
+}
+.navigation-bar-btn:active {
+    background-color: #272727;
+}
 #btn1 {
     width: 124px;
     border-radius: 0 0 0 20px;
