@@ -7,34 +7,62 @@
         <meta name="og:title" content="One Piece RPG" />
         <meta
             name="og:description"
-            content="A discord bot, based on the anime One Piece with role-play."
+            content="A discord bot, based on the anime One Piece. A Role-Playing Game"
         />
         <meta
             name="og:image"
             content="https://smxtreme.github.io/One-Piece-RPG/Assets/one-piece-logo.png"
         />
-        <title>One Piece RPG</title>
+        <meta name="og:image:width" content="400" />
+        <meta name="og:image:height" content="100" />
+
         <link rel="stylesheet" href="./CSS/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>One Piece RPG</title>
     </head>
-    <body class="background">
-        <img class="logo" src="./Assets/one-piece-logo.png" />
-        <div class="navigation-bar">
-            <a href="./HTML/perks.HTML"
-                ><button id="btn1" class="navigation-bar-btn">Perks</button></a
-            >
-            <a href="./HTML/perks.HTML"
-                ><button id="btn2" class="navigation-bar-btn">Terms</button></a
-            >
-            <a href="./HTML/perks.HTML"
-                ><button id="btn3" class="navigation-bar-btn">Help</button></a
-            >
-            <a
-                href="https://discord.com/oauth2/authorize?client_id=1075346337085796363&permissions=964421872704&scope=applications.commands%20bot"
-                target="_blank"
-                ><button id="btn4" class="navigation-bar-btn">Add To Server</button></a
-            >
-        </div>
-        <div class="information-area"></div>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <div class="left">
+                <a href="./index.html"><img src="./Assets/one-piece-logo.png" /></a>
+            </div>
+            <div class="right">
+                <a href="./HTML/perks.HTML">Help</a>
+                <a href="./HTML/perks.HTML">Perks</a>
+                <a
+                    href="https://discord.com/oauth2/authorize?client_id=1075346337085796363&permissions=964421872704&scope=applications.commands%20bot"
+                    target="_blank"
+                    >Invite Now</a
+                >
+                <a href="./HTML/perks.HTML"
+                    ><span id="span1">TOS</span><span id="span2">Terms Of Service</span></a
+                >
+            </div>
+        </nav>
+
+        <main>
+            <!-- About -->
+            <section class="about">
+                <div class="text">
+                    <h2>ABOUT</h2>
+                    <p class="about-text">Its a discord bot, based on anime One Piece</p>
+                    <p class="about-text">with role-play,</p>
+                    <p class="about-text">each and everything is being tried to make it best.</p>
+                    <p class="about-text">Anyone can add the bot in there servers.</p>
+                    <p class="about-text">It is free to play.</p>
+                </div>
+                <div class="video"></div>
+            </section>
+
+            <!-- Features -->
+            <section></section>
+        </main>
         <script src="./JS/index.js"></script>
     </body>
 </html>

@@ -1,148 +1,103 @@
+:root {
+    --link-color: rgb(43, 43, 43);
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
-    background-image: url('../Assets/home-page-background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
 }
-.logo {
-    height: 140px;
-    position: fixed;
-    z-index: 1;
+
+a {
+    color: black;
+    text-decoration: none;
 }
-.navigation-bar {
-    position: relative;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: right;
-}
-.navigation-bar-btn {
-    position: relative;
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    padding: 0 20px 0 10px;
     height: fit-content;
-    width: fit-content;
-    padding: 15px 5px;
-    font-size: 37px;
-    cursor: pointer;
-    border-color: white;
-    border-top: none;
-    border-left: none;
-    border-bottom: none;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
-    background-color: rgba(99, 99, 99, 0.764);
+    align-items: center;
 }
-.navigation-bar-btn:hover {
-    background-color: #3e3e3e;
+
+nav .left img {
+    height: 100px;
 }
-.navigation-bar-btn:active {
-    background-color: #272727;
-}
-#btn1 {
-    border-radius: 0 0 0 20px;
-}
-#btn4 {
-    border-right: none;
-}
-.information-area {
-    position: absolute;
-    margin: 175px 45px 175px 45px;
-    width: 775px;
-    height: auto;
-    text-wrap: balance;
-    text-align: center;
-    font-family: Arial;
+
+nav .right a {
+    margin: 0 5px;
     font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-@media (max-width: 1100px) {
-    .logo {
-        height: 100px;
-    }
-    .navigation-bar-btn {
-        font-size: 30px;
-    }
+nav .right a:hover {
+    background-color: black;
+    color: white;
 }
 
-@media (max-width: 885px) {
-    body {
-        background-image: url('../Assets/home-page-background-croped.jpg');
+nav .right a:active {
+    background-color: rgb(75, 75, 75);
+}
+
+#span1 {
+    display: none;
+}
+
+@media (max-width: 970px) {
+    nav {
+        flex-direction: column;
     }
-    .logo {
-        position: relative;
-        height: 130px;
-        display: flex;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .navigation-bar {
-        position: relative;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        justify-content: space-evenly;
-        padding: 0;
-    }
-    .navigation-bar-btn {
-        position: relative;
-        height: fit-content;
-        width: fit-content;
-        padding: 10px 20px;
-        font-size: 23px;
-        cursor: pointer;
-        border: none;
-        font-weight: bold;
-        font-family: 'Times New Roman', Times, serif;
-        color: rgb(255, 255, 255);
-        background-color: transparent;
-    }
-    .navigation-bar-btn:hover {
-        background-color: transparent;
-    }
-    .navigation-bar-btn:active {
-        background-color: transparent;
-    }
-    #btn1 {
-        border-radius: 0;
+
+    nav .right {
+        margin: 10px 0;
     }
 }
 
-@media (max-width: 520px) {
-    body {
-        background-image: url('../Assets/home-page-background-croped.jpg');
+@media (max-width: 580px) {
+    nav .right {
+        margin: 10px 0;
     }
-    .logo {
-        position: relative;
-        height: 130px;
-        display: flex;
-        margin-right: auto;
-        margin-left: auto;
+
+    nav .right a {
+        padding: 5px 10px;
     }
-    .navigation-bar {
-        position: relative;
-        width: fit-content;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        justify-content: space-evenly;
-        padding: 0;
+
+    #span1 {
+        display: unset;
     }
-    .navigation-bar-btn {
-        position: relative;
-        height: fit-content;
-        width: fit-content;
-        padding: 10px 30px;
-        font-size: 20px;
-        cursor: pointer;
-        border: none;
-        font-weight: bold;
-        font-family: 'Times New Roman', Times, serif;
-        color: rgb(255, 255, 255);
-        background-color: transparent;
+
+    #span2 {
+        display: none;
     }
-    #btn4 {
-        width: 200px;
-    }
+}
+
+/* About */
+
+section {
+    margin: 90px 100px;
+}
+
+.about {
+    display: flex;
+}
+
+.about h2 {
+    font-size: 50px;
+    margin: 0 0 15px 0;
+}
+
+.about p {
+    font-size: 17px;
+    margin: 10px 0;
+    color: rgb(53, 53, 53);
 }
