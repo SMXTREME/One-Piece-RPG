@@ -1,5 +1,5 @@
 :root {
-    --link-color: rgb(43, 43, 43);
+    --title-colour: white;
 }
 
 * {
@@ -7,20 +7,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(155, 155, 155);
+    /* background-color: rgb(155, 155, 155); */
+    background-image: url(../Assets/background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
+p {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    text-shadow: 4px 4px black;
+}
+
+h3 {
+    text-shadow: 4px 4px black;
+}
 /* Navbar */
 nav {
     display: flex;
@@ -28,7 +46,6 @@ nav {
     padding: 0 20px 0 10px;
     height: fit-content;
     align-items: center;
-    background-color: rgb(117, 117, 117);
 }
 
 nav .left img {
@@ -71,13 +88,12 @@ section {
 
 .about h2 {
     font-size: 70px;
-    color: rgb(35, 35, 35);
+    color: white;
 }
 
 .about p {
     font-size: 20px;
     margin: 15px 0 0 0;
-    color: rgb(52, 52, 52);
     width: 550px;
     line-height: 42px;
     margin-bottom: 20px;
@@ -120,7 +136,7 @@ section {
 .features .title h2 {
     font-size: 70px;
     margin-bottom: 50px;
-    color: rgb(35, 35, 35);
+    color: var(--title-colour);
 }
 
 .features .feature-items {
@@ -133,7 +149,7 @@ section {
 .features .feature-items h3 {
     display: list-item;
     font-size: 50px;
-    color: rgb(45, 45, 45);
+    color: var(--title-colour);
 }
 
 .features .feature-items video {
@@ -149,7 +165,6 @@ section {
 
 .features .feature-items p {
     font-size: 22px;
-    color: rgb(35, 35, 35);
     text-align: center;
     line-height: 42px;
     width: 900px;
@@ -170,6 +185,10 @@ section {
 }
 
 @media (max-width: 970px) {
+    body {
+        background-position: -225px;
+    }
+
     nav {
         flex-direction: column;
     }
@@ -187,7 +206,6 @@ section {
     .about h2 {
         font-size: 50px;
         margin: 0 0 15px 0;
-        color: rgb(35, 35, 35);
     }
 
     .about p {
@@ -231,7 +249,14 @@ section {
     }
 }
 
+/* @media (max-width: ) */
+
 @media (max-width: 690px) {
+    body {
+        background-image: url(../Assets/background-phone.png);
+        background-position: center;
+    }
+
     section {
         margin-top: 15px;
         margin-bottom: 25px;
