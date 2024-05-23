@@ -24,6 +24,7 @@ body {
 
 a {
     color: white;
+    text-shadow: 2px 2px black;
     text-decoration: none;
 }
 
@@ -185,6 +186,14 @@ section {
 }
 
 @media (max-width: 970px) {
+    a {
+        text-shadow: 1.5px 1.5px black;
+    }
+
+    p {
+        text-shadow: 1.5px 1.5px black;
+    }
+
     body {
         background-position: -225px;
     }
@@ -228,6 +237,10 @@ section {
     .features .title h2 {
         font-size: 50px;
         margin-bottom: 25px;
+    }
+
+    .features .feature-items {
+        margin-bottom: 50px;
     }
 
     .features .feature-items p {
@@ -328,9 +341,21 @@ section {
         display: none;
     }
 
+    h2 {
+        text-shadow: 2.5px 2.5px black;
+    }
+
+    h3 {
+        text-shadow: 2.5px 2.5px black;
+    }
+
     .about p {
         width: 375px;
         line-height: 30px;
+    }
+
+    .features .feature-items {
+        margin-bottom: 0;
     }
 
     .features .feature-items video {

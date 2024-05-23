@@ -1,0 +1,141 @@
+:root {
+    --title-colour: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(155, 155, 155); */
+    background-image: url(../Assets/background-guild.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: white;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    text-shadow: 4px 4px black;
+}
+
+h3 {
+    text-shadow: 4px 4px black;
+}
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 10px;
+    height: fit-content;
+    align-items: center;
+}
+
+nav .left img {
+    height: 100px;
+}
+
+nav .right a {
+    margin: 0 5px;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav .right a:hover {
+    background-color: black;
+    color: white;
+}
+
+nav .right a:active {
+    background-color: rgb(75, 75, 75);
+    transition: none;
+}
+
+#span1 {
+    display: none;
+}
+
+@media (max-width: 1170px) {
+    a {
+        text-shadow: 1.5px 1.5px black;
+    }
+
+    section {
+        margin: 75px;
+    }
+}
+
+@media (max-width: 970px) {
+    body {
+        background-position: -225px;
+    }
+
+    /* navbar */
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .right {
+        margin: 10px 0;
+    }
+}
+
+/* @media (max-width: ) */
+
+@media (max-width: 690px) {
+    body {
+        background-image: url(../Assets/background-guild-phone.png);
+        background-position: center;
+    }
+
+    section {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 580px) {
+    #span1 {
+        display: unset;
+    }
+
+    #span2 {
+        display: none;
+    }
+
+    nav .right a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav .left img {
+        height: 70px;
+    }
+
+    nav .right a {
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+}
