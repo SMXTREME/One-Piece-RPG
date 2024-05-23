@@ -175,6 +175,37 @@ section {
     margin: 15px;
 }
 
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 25px;
+}
+
+footer a {
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 7px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer a .span1 {
+    display: none;
+}
+
+footer a:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+footer u {
+    cursor: pointer;
+}
+
 @media (max-width: 1170px) {
     .about .bot-image img {
         height: 250px;
@@ -318,6 +349,16 @@ section {
         line-height: 30px;
         width: 500px;
     }
+
+    /* footer */
+
+    footer {
+        font-size: 20px;
+    }
+
+    footer a {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 580px) {
@@ -375,6 +416,16 @@ section {
 
     .features .feature-items h3 {
         font-size: 30px;
+    }
+
+    /* footer */
+
+    footer {
+        font-size: 15px;
+    }
+
+    footer a {
+        font-size: 12px;
     }
 }
 
@@ -441,5 +492,23 @@ section {
     .features .feature-items video:hover {
         height: 150px;
         border-radius: 20px;
+    }
+
+    /* footer */
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+
+    footer a .span1 {
+        display: unset;
+    }
+
+    footer a .span2 {
+        display: none;
     }
 }

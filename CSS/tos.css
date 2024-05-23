@@ -34,13 +34,21 @@ p {
 }
 
 h2 {
+    color: white;
     text-shadow: 4px 4px black;
 }
 
 h3 {
+    color: white;
     text-shadow: 4px 4px black;
 }
+
+section {
+    margin: 50px 225px;
+}
+
 /* Navbar */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -75,6 +83,67 @@ nav .right a:active {
     display: none;
 }
 
+/* TOS */
+
+.date {
+    text-align: end;
+    font-size: 18px;
+}
+
+.heading {
+    font-size: 65px;
+    text-align: center;
+}
+
+.tos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tos .tos-items {
+    margin-bottom: 45px;
+}
+
+.tos .tos-items h3 {
+    font-size: 45px;
+}
+
+.tos .tos-items p {
+    font-size: 17px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 25px;
+}
+
+footer a {
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 7px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer a .span1 {
+    display: none;
+}
+
+footer a:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+footer u {
+    cursor: pointer;
+}
+
 @media (max-width: 1170px) {
     a {
         text-shadow: 1.5px 1.5px black;
@@ -87,7 +156,6 @@ nav .right a:active {
 
 @media (max-width: 970px) {
     body {
-        background-position: -225px;
     }
 
     /* navbar */
@@ -99,6 +167,20 @@ nav .right a:active {
     nav .right {
         margin: 10px 0;
     }
+
+    /* tos */
+
+    .terms h2 {
+        font-size: 45px;
+    }
+
+    .tos .tos-items h3 {
+        font-size: 37px;
+    }
+
+    .tos .tos-items p {
+        font-size: 14px;
+    }
 }
 
 /* @media (max-width: ) */
@@ -109,9 +191,28 @@ nav .right a:active {
         background-position: center;
     }
 
-    section {
-        margin-top: 15px;
-        margin-bottom: 25px;
+    /* tos */
+
+    .terms h2 {
+        font-size: 39px;
+    }
+
+    .tos .tos-items h3 {
+        font-size: 30px;
+    }
+
+    .tos .tos-items p {
+        font-size: 12px;
+    }
+
+    /* footer */
+
+    footer {
+        font-size: 20px;
+    }
+
+    footer a {
+        font-size: 15px;
     }
 }
 
@@ -127,6 +228,34 @@ nav .right a:active {
     nav .right a {
         font-size: 17px;
     }
+
+    /* tos */
+
+    section {
+        margin: 25px;
+    }
+
+    .terms .date {
+        font-size: 12px;
+    }
+
+    .terms h2 {
+        font-size: 30px;
+    }
+
+    .tos .tos-items h3 {
+        font-size: 25px;
+    }
+
+    /* footer */
+
+    footer {
+        font-size: 15px;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -137,5 +266,23 @@ nav .right a:active {
     nav .right a {
         padding: 5px 5px;
         font-size: 15px;
+    }
+
+    /* footer */
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+
+    footer a .span1 {
+        display: unset;
+    }
+
+    footer a .span2 {
+        display: none;
     }
 }
