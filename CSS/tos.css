@@ -44,7 +44,10 @@ h3 {
 }
 
 section {
-    margin: 50px 225px;
+    margin: 50px 200px;
+    background-color: rgba(116, 116, 116, 0.562);
+    padding: 25px;
+    border-radius: 15px;
 }
 
 /* Navbar */
@@ -113,6 +116,9 @@ nav .right a:active {
     font-size: 17px;
 }
 
+.tos .tos-items u {
+    cursor: pointer;
+}
 /* footer */
 
 footer {
@@ -155,7 +161,8 @@ footer u {
 }
 
 @media (max-width: 970px) {
-    body {
+    section {
+        margin: 50px;
     }
 
     /* navbar */
@@ -189,6 +196,10 @@ footer u {
     body {
         background-image: url(../Assets/background-tos-phone.png);
         background-position: center;
+    }
+
+    section {
+        margin: 25px;
     }
 
     /* tos */
@@ -230,10 +241,6 @@ footer u {
     }
 
     /* tos */
-
-    section {
-        margin: 25px;
-    }
 
     .terms .date {
         font-size: 12px;
