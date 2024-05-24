@@ -10,12 +10,11 @@
 
 html {
     scroll-behavior: smooth;
-    scrollbar-width: none;
+    scrollbar-width: thin;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* background-color: rgb(155, 155, 155); */
     background-image: url(../Assets/background-tos.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -116,8 +115,9 @@ nav .right a:active {
     font-size: 17px;
 }
 
-.tos .tos-items u {
+.tos .tos-items a {
     cursor: pointer;
+    text-decoration: underline;
 }
 /* footer */
 
@@ -129,7 +129,11 @@ footer {
     font-size: 25px;
 }
 
-footer a {
+footer .left-footer a {
+    text-decoration: underline;
+}
+
+footer .right-footer a {
     font-size: 20px;
     padding: 5px 10px;
     background-color: black;
@@ -138,23 +142,15 @@ footer a {
     cursor: pointer;
 }
 
-footer a .span1 {
+footer .right-footer a .span1 {
     display: none;
 }
 
-footer a:hover {
+footer .right-footer a:hover {
     background-color: rgb(50, 50, 50);
 }
 
-footer u {
-    cursor: pointer;
-}
-
 @media (max-width: 1170px) {
-    a {
-        text-shadow: 1.5px 1.5px black;
-    }
-
     section {
         margin: 75px;
     }
@@ -222,7 +218,7 @@ footer u {
         font-size: 20px;
     }
 
-    footer a {
+    footer .right-footer a {
         font-size: 15px;
     }
 }
@@ -260,7 +256,7 @@ footer u {
         font-size: 15px;
     }
 
-    footer a {
+    footer .right-footer a {
         font-size: 12px;
     }
 }
@@ -285,11 +281,11 @@ footer u {
         font-size: 10px;
     }
 
-    footer a .span1 {
+    footer .right-footer a .span1 {
         display: unset;
     }
 
-    footer a .span2 {
+    footer .right-footer a .span2 {
         display: none;
     }
 }
