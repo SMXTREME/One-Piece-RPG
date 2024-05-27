@@ -221,10 +221,6 @@ footer .right-footer a:hover {
 }
 
 @media (max-width: 970px) {
-    body {
-        background-position: -225px;
-    }
-
     /* navbar */
 
     nav {
