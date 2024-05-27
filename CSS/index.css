@@ -225,10 +225,6 @@ footer u {
         text-shadow: 1.5px 1.5px black;
     }
 
-    body {
-        background-position: -225px;
-    }
-
     nav {
         flex-direction: column;
     }
