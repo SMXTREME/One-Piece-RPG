@@ -80,6 +80,10 @@ nav .right a:active {
         text-shadow: 1.5px 1.5px black;
     }
 
+    nav .right a {
+        font-size: 17px;
+    }
+
     section {
         margin: 75px;
     }

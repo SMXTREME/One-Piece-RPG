@@ -207,6 +207,10 @@ footer u {
 }
 
 @media (max-width: 1170px) {
+    nav .right a {
+        font-size: 17px;
+    }
+
     .about .bot-image img {
         height: 250px;
     }

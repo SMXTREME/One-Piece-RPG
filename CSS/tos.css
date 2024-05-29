@@ -152,6 +152,10 @@ footer .right-footer a:hover {
 }
 
 @media (max-width: 1170px) {
+    nav .right a {
+        font-size: 17px;
+    }
+
     section {
         margin: 75px;
     }
