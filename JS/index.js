@@ -4,5 +4,5 @@ function backToTop() {
 }
 
 function websiteOpen() {
-    window.open('/');
+    window.open('https://discord.com/users/716182133345091684');
 }
