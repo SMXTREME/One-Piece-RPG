@@ -1,0 +1,301 @@
+:root {
+    --font-size-s: 20px;
+    --font-size-m: 18px;
+    --font-size-xl: 19px;
+
+    --heading-size-s: 50px;
+    --heading-size-m: 55px;
+    --heading-size-xl: 60px;
+
+    --sub-heading-size-s: 35px;
+    --sub-heading-size-m: 40px;
+    --sub-heading-size-xl: 45px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    background-image: url(../Assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+main {
+    position: relative;
+    top: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+    margin: 25px max(5%, 20px) 50px max(5%, 20px);
+}
+
+.about .about-left {
+    display: flex;
+    flex-direction: column;
+    width: max(40%, 400px);
+    color: white;
+    text-decoration: none;
+}
+
+.about .about-left h1 {
+    font-size: 65px;
+    text-shadow: black 2px 2px;
+    margin-bottom: 5px;
+}
+
+.about .about-left p {
+    font-size: 20px;
+    text-shadow: black 1.5px 1.5px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.about .about-left a {
+    font-size: 20px;
+    width: fit-content;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    text-shadow: black 1.5px 1.5px;
+    padding: 7px;
+    background-color: green;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    transition: 100ms;
+}
+
+.about .about-left a:hover {
+    background-color: rgb(0, 155, 0);
+}
+
+.about .about-left a:active {
+    background-color: rgb(0, 200, 0);
+}
+
+.about .about-right img {
+    height: 250px;
+    border-radius: 15px;
+}
+
+.features {
+    color: white;
+    margin: 125px max(5%, 20px) 0 max(5%, 20px);
+}
+
+.features h1 {
+    font-size: 65px;
+    text-shadow: black 2px 2px;
+    margin-top: 15px;
+}
+
+.features ul li {
+    margin: 80px 0;
+    padding: 20px;
+    list-style: none;
+    background-color: rgba(143, 143, 143, 0.208);
+    border-radius: 15px;
+    text-shadow: black 1.5px 1.5px;
+}
+
+.features ul li:first-child {
+    margin-top: 25px;
+}
+
+.features ul li h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-shadow: black 2px 2px;
+    text-wrap: nowrap;
+}
+
+.features ul li p {
+    font-size: 20px;
+}
+
+.features ul .right-left .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.features ul .right-left h3 {
+    text-align: right;
+    text-wrap: nowrap;
+}
+
+.features ul .right-left .content .content-left p {
+    text-align: right;
+}
+
+.features ul .left-right .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features ul li .content .content-left {
+    width: max(40%, 400px);
+}
+
+.features video {
+    height: 200px;
+}
+
+@media (max-width: 970px) {
+    .about .about-left p {
+        font-size: 17px;
+        line-height: 35px;
+    }
+
+    .about .about-left a {
+        font-size: 17px;
+    }
+
+    .features {
+        color: white;
+    }
+
+    .features ul li {
+        margin: 0;
+        padding: 20px;
+        list-style: none;
+        background-color: transparent;
+        border-radius: 15px;
+    }
+
+    .features ul li:last-child {
+        margin-bottom: 25px;
+    }
+
+    .features ul li h3 {
+        margin-bottom: 15px;
+    }
+
+    .features ul li p {
+        font-size: 17px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .features ul .right-left .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .features ul .right-left h3 {
+        text-align: center;
+    }
+
+    .features ul .right-left .content .content-left p {
+        text-align: center;
+    }
+
+    .features ul .left-right .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features ul li .content .content-left {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 790px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .about .about-left {
+        width: 100%;
+        max-width: 575px;
+        margin-bottom: 30px;
+    }
+
+    .about .about-right img {
+        height: 200px;
+    }
+
+    .features {
+        margin-top: 30px;
+    }
+
+    .features h1 {
+        text-align: center;
+    }
+
+    .features ul li:first-child {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 580px) {
+    body {
+        background-image: url(../Assets/background-phone.png);
+        background-position: center;
+    }
+
+    .about {
+        margin-top: 0;
+    }
+
+    .about .about-left h1 {
+        font-size: 50px;
+    }
+
+    .about .about-left p,
+    .about .about-left a {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .about .about-right img {
+        height: 175px;
+    }
+
+    .features h1 {
+        font-size: 50px;
+        margin-top: -10px;
+    }
+
+    .features ul li {
+        margin: 0;
+    }
+
+    .features ul li h3 {
+        font-size: 35px;
+    }
+
+    .features ul li p {
+        font-size: 14px;
+        line-height: 25px;
+        text-wrap: stable;
+    }
+
+    .features ul li video {
+        height: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .features ul li video {
+        height: 125px;
+    }
+}
