@@ -16,12 +16,20 @@
         <meta name="og:image:width" content="400" />
         <meta name="og:image:height" content="100" />
 
-        <link rel="stylesheet" href="./CSS/index.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/global.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
         />
         <link rel="icon" type="image/x-icon" href="./Assets/One Piece Logo.png" />
 
@@ -31,149 +39,158 @@
         <!-- Navbar -->
         <nav>
             <div class="left">
-                <a href="./index.html"><img src="./Assets/one-piece-logo.png" /></a>
+                <a href="./"><img src="./Assets/one-piece-logo.png" /></a>
             </div>
             <div class="right">
-                <a href="./HTML/Guide.HTML">Guide</a>
-                <a href="./HTML/Perks.HTML">Perks</a>
-                <a
-                    href="https://discord.com/oauth2/authorize?client_id=1075346337085796363&permissions=964421872704&scope=applications.commands%20bot"
-                    target="_blank"
-                    ><span id="span1">Invite</span><span id="span2">Invite Now</span></a
-                >
-                <a href="./HTML/tos.HTML"
-                    ><span id="span1">TOS</span><span id="span2">Terms Of Service</span></a
-                >
+                <ul>
+                    <li><a class="main-navs" href="./">Home</a></li>
+                    <li>
+                        <a
+                            class="main-navs"
+                            href="https://discord.com/oauth2/authorize?client_id=1075346337085796363&permissions=964421872704&scope=applications.commands%20bot"
+                            >Invite</a
+                        >
+                    </li>
+                    <li><a class="main-navs" href="./Perks.html">Perks</a></li>
+                    <li><a class="main-navs" href="./Guide.html">Guide</a></li>
+                    <li id="dropdown-nav">
+                        <a id="dropdown-nav-a" class="main-navs"
+                            ><i class="fa-solid fa-bars"></i> <span>Pages</span></a
+                        >
+                        <div id="nav-drop-ul" class="drop-box" data-dropdown>
+                            <ul>
+                                <a href="./Updates.html"><li>Updates</li></a>
+                                <a href="./HOF.html"><li>Hall of Fame</li></a>
+                                <a href="./TOS.html"><li>TOS</li></a>
+                                <a href="./privacy-policy.html"
+                                    ><li id="nav-drop-pvp">Privacy Policy</li></a
+                                >
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
 
         <main>
-            <!-- About -->
             <section class="about">
-                <div class="text">
-                    <h2>ABOUT</h2>
+                <div class="about-left">
+                    <h1>About</h1>
                     <p class="about-text">
                         Embark on a journey across the seas in One Piece RPG! Learn and acquire the
                         signature techniques of your favorite Straw Hat crew members and use them
                         against your enemies.
                     </p>
-                    <div class="link-area">
-                        <a id="join-server" href="https://discord.gg/mwjnPVPAN5" target="_blank"
-                            >Join Official Discord Server</a
-                        >
-                    </div>
+                    <a id="join-server" href="https://discord.gg/mwjnPVPAN5" target="_blank"
+                        >Join Official Discord Server</a
+                    >
                 </div>
-                <div class="bot-image">
-                    <img src="./Assets/bots-logo.jpeg" />
+                <div class="about-right">
+                    <img src="./Assets/bots-logo.jpeg" alt="Bots Image" id="bot-image" />
                 </div>
             </section>
 
-            <!-- Features -->
             <section class="features">
-                <div class="title">
-                    <h2>Features</h2>
-                </div>
-
-                <!-- leveling system -->
-
-                <div id="leveling-system" class="feature-items">
-                    <div>
-                        <h3>Leveling System</h3>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <p>
-                            Unlock new abilities, conquer challenges, and become the ultimate pirate
-                            as you progress through our leveling system of the One Piece RPG Bot
-                        </p>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <video src="./Assets/leveling-system.mp4" autoplay loop muted></video>
-                    </div>
-                </div>
-
-                <!-- moves -->
-
-                <div id="moves" class="feature-items">
-                    <div>
-                        <h3>More Than 100 Moves</h3>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <p>
-                            Unleash the power of over 100 unique moves inspired by the legendary
-                            abilities of One Piece characters, in the immersive One Piece RPG Bot
-                            experience
-                        </p>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <video src="./Assets/100-moves.mp4" autoplay loop muted></video>
-                    </div>
-                </div>
-
-                <!-- Missions -->
-
-                <div id="mission" class="feature-items">
-                    <div>
-                        <h3>Missions</h3>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <p>
-                            Dive into thrilling missions in East Blue, West Blue, South Blue, North
-                            Blue and many more coming soon, Missions are on various stuff ranging
-                            from finding treasure to defeating the Four Emperors of the Sea
-                        </p>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <video src="./Assets/missions.mp4" autoplay loop muted></video>
-                    </div>
-                </div>
-
-                <!-- PVP pve -->
-
-                <div id="pvp-pve" class="feature-items">
-                    <div>
-                        <h3>PvP And PvE</h3>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <p>
-                            Engage in intense PvP battles against fellow players or for challenging
-                            PvE missions, where you'll encounter formidable foes and epic fights
-                        </p>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <video src="./Assets/leveling-system.mp4" autoplay loop muted></video>
-                    </div>
-                </div>
-
-                <!-- leaderboard -->
-
-                <div id="leaderboard" class="feature-items">
-                    <div>
-                        <h3>Leaderboard</h3>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <p>
-                            Climb the ranks and compete for supremacy on the leaderboard, showcasing
-                            your prowess in battles and completing missions as you strive to become
-                            the strongest One Piece RPG player
-                        </p>
-                    </div>
-                    <div class="feature-items-elelment">
-                        <video src="./Assets/leaderboard.mp4" autoplay loop muted></video>
-                    </div>
-                </div>
+                <h1>Features</h1>
+                <ul>
+                    <li class="left-right">
+                        <div class="content">
+                            <div class="content-left">
+                                <h3>Leveling System</h3>
+                                <p>
+                                    Unlock new abilities, conquer challenges, and become the
+                                    ultimate pirate as you progress through our leveling system of
+                                    the One Piece RPG Bot
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <video
+                                    src="./Assets/leveling-system.mp4"
+                                    autoplay
+                                    loop
+                                    muted
+                                ></video>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="right-left">
+                        <div class="content">
+                            <div class="content-left">
+                                <h3>70+ Moves</h3>
+                                <p>
+                                    Unleash the power of over 70+ unique moves inspired by the
+                                    legendary abilities of One Piece characters, in the immersive
+                                    One Piece RPG Bot experience
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <video src="./Assets/100-moves.mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="left-right">
+                        <div class="content">
+                            <div class="content-left">
+                                <h3>Missions</h3>
+                                <p>
+                                    Dive into thrilling missions in East Blue, West Blue, South
+                                    Blue, North Blue and many more coming soon, Missions are on
+                                    various stuff ranging from finding treasure to defeating the
+                                    Four Emperors of the Sea
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <video src="./Assets/missions.mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="right-left">
+                        <div class="content">
+                            <div class="content-left">
+                                <h3>PvP & PvE</h3>
+                                <p>
+                                    Engage in intense PvP battles against fellow players or for
+                                    challenging PvE missions, where you'll encounter formidable foes
+                                    and epic fights
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <video
+                                    src="./Assets/leveling-system.mp4"
+                                    autoplay
+                                    loop
+                                    muted
+                                ></video>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="left-right">
+                        <div class="content">
+                            <div class="content-left">
+                                <h3>Leaderboard</h3>
+                                <p>
+                                    Climb the ranks and compete for supremacy on the leaderboard,
+                                    showcasing your prowess in battles and completing missions as
+                                    you strive to become the strongest One Piece RPG player
+                                </p>
+                            </div>
+                            <div class="content-right">
+                                <video src="./Assets/leaderboard.mp4" autoplay loop muted></video>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </section>
         </main>
 
         <footer>
-            <div class="left-footer">
-                <p>Made with love by <u onclick="websiteOpen()">SMXTREME</u></p>
-            </div>
-            <div class="right-footer">
-                <a onclick="backToTop()"
-                    ><span class="span1">Top</span><span class="span2">Back To Top</span></a
+            <p class="footer-text">
+                Copyright &copy 2024
+                <a class="footer-text" href="https://discord.com/users/716182133345091684"
+                    >SMXTREME</a
                 >
-            </div>
+            </p>
         </footer>
-        <script src="./JS/index.js"></script>
+        <script src="./js/global.js"></script>
     </body>
 </html>
