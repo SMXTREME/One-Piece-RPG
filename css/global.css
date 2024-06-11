@@ -130,7 +130,8 @@ footer {
     right: 0;
     left: 0;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
+    background-color: rgba(0, 136, 255, 0.395);
 }
 
 footer p a {
@@ -174,8 +175,6 @@ footer p a {
     }
 }
 
-@media (max-width: 690px) {
-}
 @media (max-width: 580px) {
     nav .right ul li .main-navs {
         font-size: var(--font-size-s);

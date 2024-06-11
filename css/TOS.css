@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    background-image: url(../Assets/background-tos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main {
+    background-color: rgba(175, 175, 175, 0.499);
+    padding: 30px;
+    margin: 20px max(5%, 25px);
+    border-radius: 20px;
+}
+
+.main #date {
+    text-align: right;
+}
+
+.main h1 {
+    text-align: center;
+    color: white;
+    text-shadow: black 2px 2px;
+    font-size: 60px;
+    margin-top: 12px;
+}
+
+.main p,
+.main a {
+    color: white;
+    text-shadow: black 1.5px 1.5px;
+    font-size: 19px;
+}
+
+.main h2 {
+    color: white;
+    text-shadow: black 2px 2px;
+    font-size: 35px;
+}
+
+#full {
+    display: unset;
+}
+
+#abrivation {
+    display: none;
+}
+
+@media (max-width: 945px) {
+    .main {
+        padding: 25px;
+    }
+
+    .main h1 {
+        font-size: 52px;
+    }
+
+    .main p,
+    .main a {
+        font-size: 17px;
+    }
+
+    .main h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    body {
+        background-image: url('../Assets/background-tos-phone.png');
+    }
+
+    .main h1 {
+        font-size: 41px;
+    }
+
+    .main p,
+    .main a {
+        font-size: 16px;
+    }
+
+    .main h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 460px) {
+    .main {
+        padding: 15px;
+    }
+
+    .main h1 {
+        font-size: 33px;
+    }
+
+    .main p,
+    .main a {
+        font-size: 14px;
+    }
+
+    .main h2 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 367px) {
+    .main {
+        padding: 15px;
+        margin: 20px 15px;
+    }
+
+    .main h1 {
+        font-size: 40px;
+        margin-bottom: -15px;
+    }
+
+    .main p,
+    .main a {
+        font-size: 14px;
+    }
+
+    .main h2 {
+        font-size: 23px;
+    }
+
+    #full {
+        display: none;
+    }
+
+    #abrivation {
+        display: unset;
+    }
+}

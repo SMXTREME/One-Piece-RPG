@@ -24,7 +24,7 @@ main {
 section {
     display: flex;
     justify-content: space-evenly;
-    margin: 75px 0 30px 0;
+    margin: 35px 0 0 0;
 }
 
 .perks-box {
@@ -139,6 +139,7 @@ section {
         margin: 0;
         width: 40%;
         min-width: 350px;
+        margin-bottom: 30px;
     }
 
     .perks-box h1 {
