@@ -1,0 +1,159 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    background-image: url(../Assets/background-leaderboard.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.user-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 85%;
+    max-width: 700px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.user-card img {
+    height: 90px;
+    border-radius: 100%;
+}
+
+.user-card p {
+    color: white;
+    text-shadow: black 1.5px 1.5px;
+    font-size: 19px;
+    text-align: center;
+    width: 100%;
+}
+
+#span2 {
+    display: none;
+}
+
+#span3 {
+    display: none;
+}
+
+#span4 {
+    display: none;
+}
+
+.user-name {
+    width: 50px;
+    overflow: hidden;
+}
+
+.loader {
+    position: absolute;
+    top: 40%;
+    border: 10px solid white; /* Light grey */
+    border-top: 10px solid black; /* Blue */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 970px) {
+    .user-card img {
+        height: 75px;
+    }
+    .user-card p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 700px) {
+    #span1 {
+        display: none;
+    }
+
+    #span2 {
+        display: unset;
+    }
+
+    .user-card p {
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    #span2 {
+        display: none;
+    }
+
+    #span3 {
+        display: unset;
+    }
+
+    .user-card {
+        padding: 10px;
+    }
+
+    .user-card img {
+        height: 65px;
+    }
+
+    .user-card p {
+        line-height: 27px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .user-card p {
+        line-height: normal;
+        font-size: 13.5px;
+    }
+}
+
+@media (max-width: 500px) {
+    #span3 {
+        display: none;
+    }
+
+    #span4 {
+        display: unset;
+    }
+
+    .user-card {
+        padding: 10px;
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .user-card img {
+        height: 65px;
+    }
+
+    .user-card p {
+        line-height: normal;
+        font-size: 15px;
+    }
+}
